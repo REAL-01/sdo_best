@@ -78,7 +78,7 @@ async def get_test_result(db: AsyncSession, result_id: int) -> TestResult | None
         .where(TestResult.id == result_id)
         .options(
             selectinload(TestResult.student_answers),
-            selectinload(TestResult.test).selectinload(Test.questions),
+            selectinload(TestResult.test).selectinload(Test.questions).selectinload(Question.answers),
             selectinload(TestResult.student)
         )
     )
