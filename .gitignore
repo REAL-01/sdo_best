@@ -1,0 +1,42 @@
+# Environments
+.env
+.env*.local
+
+# Python
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+.venv/
+backend/.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Node / Frontend
+node_modules/
+frontend/node_modules/
+frontend/dist/
+
+# Bundles / Executables (except dist folder if user wants the compiled LightLMS.exe? Wait! The compiled LightLMS.exe is in dist/LightLMS.exe. Should we commit it? The user said "запости на гитхаб с ридми, который мы делали с картинками, реализ Альфа 0.0.1". Usually, compiled binaries are not committed to git, they are uploaded to the GitHub Release! Yes! We should upload LightLMS.exe as a release asset of the Alpha 0.0.1 release!)
+dist/
+build/
+*.spec
+LightLMS.spec
+
+# IDEs
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Temporary / Scratch files
+scratch/
+.gemini/
+*.log
+.system_generated/
